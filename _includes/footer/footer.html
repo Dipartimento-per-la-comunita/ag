@@ -1,41 +1,122 @@
-<footer class="it-footer">
-  <div class="it-footer-main">
-    <div class="container">
-      <section>
-        <div class="row clearfix">
-          <div class="col-sm-12">
-            <div class="it-brand-wrapper">
-              <a href="#">
-                <img class="icon" src="{{ site.baseurl }}{{ site.data.t.icon }}" alt="{{ site.name }} logo">
-                <div class="it-brand-text">
-                  <h2 class="no_toc">{{ site.data.t.name[page.lang] }}</h2>
-                  <h3 class="no_toc d-none d-md-block">{{ site.data.t.description[page.lang] }}</h3>
-                </div>
-              </a>
-            </div>
-          </div>
+<footer id="footer">
+  <div class="container">
+     <section>
+       <div class="row clearfix">
+         <div class="col-sm-12 intestazione">
+           <div class="logoimg">
+             <a href="index.html" title="Arena Giovani - Sito istituzionale">
+               <img src="static/img/logo_cagliari.svg" alt="Logo di Arena Giovani">
+             </a>
+           </div>
+           <div class="logotxt">
+             <h3>
+               <a href="index.html" title="Vai alla pagina: Arena Giovani - Sito istituzionale">Arena Giovani</a>
+             </h3>
+           </div>
+         </div>
+       </div>
+     </section>
+    <section class="lista-sezioni">
+          <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h4>
+            <svg class="icon"><use xlink:href="#ca-account_balance"></use></svg>Amministrazione
+          </h4>
+          <ul class="footer-list clearfix">
+            <li><a href="#" title="Vai alla pagina: Organi di governo">Organi di governo</a></li>
+            <li><a href="#" title="Vai alla pagina: Aree amministrative">Aree amministrative</a></li>
+            <li><a href="#" title="Vai alla pagina: Uffici">Uffici</a></li>
+            <li><a href="#" title="Vai alla pagina: Enti e fondazioni">Enti e fondazioni</a></li>
+            <li><a href="#" title="Vai alla pagina: Politici">Politici</a></li>
+            <li><a href="#" title="Vai alla pagina: Personale amministrativo">Personale amministrativo</a></li>
+            <li><a href="#" title="Vai alla pagina: Luoghi">Luoghi</a></li>
+          </ul>
         </div>
-      </section>
-      <section class="py-4 border-white border-top">
-        <div class="row">
-          <div class="col-md-6 pb-2">
-            {% include footer/footer-col-1.html %}
-          </div>
-          <div class="col-md-4 offset-md-2 pb-2">
-            {% include footer/footer-col-3.html %}
-          </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h4>
+            <svg class="icon"><use xlink:href="#ca-settings"></use></svg>Servizi
+          </h4>
+          <ul class="footer-list clearfix">
+            <li><a href="#" title="Vai alla pagina: Anagrafe e stato civile">Anagrafe e stato civile</a></li>
+            <li><a href="#" title="Vai alla pagina: Cultura e tempo libero">Cultura e tempo libero</a></li>
+            <li><a href="#" title="Vai alla pagina: Vita lavorativa">Vita lavorativa</a></li>
+            <li><a href="#" title="Vai alla pagina: Attività produttive e commercio">Attività produttive e commercio</a></li>
+            <li><a href="#" title="Vai alla pagina: Appalti pubblici">Appalti pubblici</a></li>
+            <li><a href="#" title="Vai alla pagina: Catasto e urbanistica">Catasto e urbanistica</a></li>
+            <li><a href="#" title="Vai alla pagina: Turismo">Turismo</a></li>
+            <li><a href="#" title="Vai alla pagina: Mobilità e trasporti">Mobilità e trasporti</a></li>
+            <li><a href="#" title="Vai alla pagina: Educazione e formazione">Educazione e formazione</a></li>
+            <li><a href="#" title="Vai alla pagina: Giustizia e sicurezza pubblica">Giustizia e sicurezza pubblica</a></li>
+            <li><a href="#" title="Vai alla pagina: Tributi e finanze">Tributi e finanze</a></li>
+            <li><a href="#" title="Vai alla pagina: Ambiente">Ambiente</a></li>
+            <li><a href="#" title="Vai alla pagina: Salute, benessere e assistenza">Salute, benessere e assistenza</a></li>
+            <li><a href="#" title="Vai alla pagina: Autorizzazioni">Autorizzazioni</a></li>
+            <li><a href="#" title="Vai alla pagina: Agricoltura">Agricoltura</a></li>
+          </ul>
         </div>
-      </section>
-    </div>
-  </div>
-  <div class="it-footer-small-prints clearfix">
-    <div class="container">
-      <h3 class="sr-only">Sezione Link Utili</h3>
-      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
-        {% for footer-link in site.data.t.footer-links[page.lang] %}
-        <li class="list-inline-item"><a href="{{ site.baseurl }}{{ footer-link[1].url }}" title="{{ footer-link[1].name }}">{{ footer-link[1].name }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h4>
+            <svg class="icon"><use xlink:href="#ca-event"></use></svg>Novità
+          </h4>
+          <ul class="footer-list clearfix">
+            <li><a href="#" title="Vai alla pagina: Notizie">Notizie</a></li>
+            <li><a href="#" title="Vai alla pagina: Comunicati stampa">Comunicati stampa</a></li>
+            <li><a href="#" title="Vai alla pagina: Eventi">Eventi</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h4>
+            <svg class="icon"><use xlink:href="#ca-description"></use></svg>Documenti e dati
+          </h4>
+          <ul class="footer-list clearfix">
+            <li><a href="#" title="Vai alla pagina: Documenti Albo pretorio">Documenti Albo pretorio</a></li>
+            <li><a href="#" title="Vai alla pagina: Modulistica">Modulistica</a></li>
+            <li><a href="#" title="Vai alla pagina: Documenti funzionamento interno">Documenti funzionamento interno</a></li>
+            <li><a href="#" title="Vai alla pagina: Normative">Normative</a></li>
+            <li><a href="#" title="Vai alla pagina: Accordi tra enti">Accordi tra enti</a></li>
+            <li><a href="#" title="Vai alla pagina: Documenti attività politica">Documenti attività politica</a></li>
+            <li><a href="#" title="Vai alla pagina: Rapporti tecnici">Rapporti tecnici</a></li>
+            <li><a href="#" title="Vai alla pagina: Dataset">Dataset</a></li>  
+          </ul>
+        </div>
+        </div>
+    </section>
+      <section class="lista-linkutili">
+          <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h4><a href="index.html" title="Vai alla pagina: Amministrazione Trasparente">Amministrazione Trasparente</a></h4>
+          <p>
+            I dati personali pubblicati sono riutilizzabili solo ai sensi dell'articolo 7 del decreto legislativo 33/2013
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h4><a href="#" title="Vai alla pagina: Contatti">Contatti</a></h4>
+          <p>
+            <strong>Arena Giovani</strong><br>
+          </p>
+          <ul class="footer-list clearfix">
+            <li><a href="#" title="Vai alla pagina: Posta Elettronica Certificata">Posta Elettronica Certificata</a></li>
+            <li><a href="#" title="Vai alla pagina: URP - Ufficio Relazioni con il Pubblico">URP - Ufficio Relazioni con il Pubblico</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <h4><a href="#" title="Vai alla pagina: Newsletter">Newsletter</a></h4>
+           <form action="#" method="post" class="ng-pristine ng-valid">
+            <label for="cm_newsletter" class="active" style="transition: none;">Iscriviti per riceverla</label>
+            <input type="text" class="form-control" placeholder="Scrivi il tuo indirizzo email" name="newsletter" id="cm_newsletter">
+            <button class="btn btn-default btn-iscriviti pull-right" type="submit">Iscriviti</button>                 
+          </form>
+        </div>
+        </div>
+    </section>
+     <section class="postFooter clearfix">
+       <h3 class="sr-only">Sezione Link Utili</h3>
+         <a href="#" title="Privacy-Cookies">Privacy-Cookies</a> | 
+         <a href="#" title="Note Legali">Note Legali</a> | 
+         <a href="#" title="Contatti">Contatti</a> | 
+         <a href="#" title="Accessibilità">Accessibilità</a> | 
+         <a href="#" title="Mappa del sito">Mappa del sito</a> | 
+         <a href="#" title="La Redazione">La Redazione</a>
+     </section>
   </div>
 </footer>
